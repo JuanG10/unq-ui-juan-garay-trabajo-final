@@ -1,9 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import '../CSSs/App.css';
 
-function App() {
+import Main from './Main'
+import '../CSSs/Main.css'
+
+const App = () => {
   return (
+    <Router>
+      <Switch>
+        <Route path="/" component={Main} />
+        <Route path="*" render={() => <div className="NotFound">NotFound</div>} />
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;
+
+/*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,7 +35,4 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
-
-export default App;
+*/
