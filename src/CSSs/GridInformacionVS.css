@@ -1,0 +1,29 @@
+/*=========== GridInformacionVS ===============================================================================*/
+
+#gridInfoVS {
+    display: flex;
+    width: 70%;
+}
+
+h2 {
+    color: gold;
+    font-size: xx-large;
+}
+
+h1 {
+    color: rgb(224, 172, 40);
+    font-size: xxx-large;
+}
+
+#jugadorPrincipal, #VS, #botonCPUJugador  {
+    flex: 1 1 0px
+}
+
+#dropdown-basic-button {
+    margin-top: 5%;
+    font-size: xx-large;
+    font-style: oblique;
+    font-family: cursive;
+    color: gold;
+    background-color: cadetblue;
+}

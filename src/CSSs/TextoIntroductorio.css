@@ -1,0 +1,43 @@
+/*============================Texto Introductorio ============================================================*/
+
+.tituloPrincipal {
+    color: gold;
+    font-size: 300%;
+    font-family: cursive;
+    font-style: oblique;
+    margin-top: auto;
+    margin-bottom: -1%;
+}
+
+#piedra {
+    color: rgb(235, 34, 74);
+    font-size: 250%;
+    font-weight: 800;
+}
+
+#papel {
+    color: rgba(240, 161, 14, 0.938);
+    font-size: 250%;
+    font-style: italic;
+    font-family: cursive;
+}
+
+#tijera {
+    color: rgba(163, 45, 163, 0.781);
+    font-size: 250%;
+    font-family: serif;
+    font-style: italic;
+}
+
+#lagarto {
+    color: rgb(29, 161, 29);
+    font-size: 250%;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#spock {
+    color: rgb(26, 26, 238);
+    font-size: 250%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
