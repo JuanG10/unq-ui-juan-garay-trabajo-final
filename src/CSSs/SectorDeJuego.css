@@ -1,0 +1,30 @@
+/* ==============SectorDeJuego================================================================================= */
+
+#sectorDeJuego {
+    display: flex;
+}
+
+#imgBasePPTLS {
+    display: grid;
+}
+
+.imagenesDeJuego :hover {
+    cursor: pointer;
+}
+
+#imgTijera {
+    grid-row: 1;
+    text-align: center;
+}
+
+#spockPapel {
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lagartoPiedra {
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between;
+}

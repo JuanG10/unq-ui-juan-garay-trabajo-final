@@ -3,5 +3,5 @@ const oponentes = {
     CPU: 'CPU',
     JUGADOR: 'Jugador'
 }
-
+ 
 export default oponentes
