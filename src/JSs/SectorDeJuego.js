@@ -33,7 +33,8 @@ function opcionAleatoria() {
 const SectorDeJuego = ({props}) => {
 
     const jugar = (jugada) => {
-        props.history.push('/Resultado')
+        const jugadaCPU = opcionAleatoria()
+        props.history.push('/resultado', { jugada, jugadaCPU })
     }
 
     return (
