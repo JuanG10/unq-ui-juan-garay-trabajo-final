@@ -12,7 +12,6 @@
 }
 
 .jugada {
-    flex : 1 1 auto;
     height: 300px;
     border :goldenrod 3px solid;
     border-style: dotted;
@@ -22,7 +21,6 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
 }
 
 #mensajeResultado {

@@ -21,12 +21,22 @@ const Resultado = (props) => {
         else return 'gray'
     }
 
+    function bordeDeResultado(resultado) {
+        if (resultado === resultados.VICTORIA) return 'aqua'
+        else if (resultado === resultados.DERROTA) return 'crimson'
+        else return 'white'
+    }
+
     const background = { backgroundColor: fondoDeResultado(resultadoEnfrentamiento) }
+
+    const colorDeBordes = { borderColor : bordeDeResultado(resultadoEnfrentamiento) }
+
+    // Quizá deba replantearme lo de los bordes...
 
     return (
         <div id="pantallaResultado" style={background}>
                 <div className="contenedor">
-                    <img className="jugada" src={seleccionarImgDeJugada(jugada1)} alt="Jugada del jugador 1" />
+                    <img className="jugada" style={colorDeBordes} src={seleccionarImgDeJugada(jugada1)} alt="Jugada del jugador 1" />
                     <h2>VICTORIAS 9000</h2>
                 </div>
                 <div className="contenedor" id="mensajeYBotonVolver">
@@ -35,7 +45,7 @@ const Resultado = (props) => {
                     <p>Soy un comentario random para el futuro.</p>
                 </div>
                 <div className="contenedor">
-                    <img className="jugada" src={seleccionarImgDeJugada(jugada2)} alt="Jugada del jugador 2" />
+                    <img className="jugada" style={colorDeBordes} src={seleccionarImgDeJugada(jugada2)} alt="Jugada del jugador 2" />
                     <h2>VICTORIAS 9000</h2>
                 </div>
         </div>
