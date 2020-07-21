@@ -40,7 +40,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.SPOCK:
                 return resultados.DERROTA
-            default: 'Error en' + jugada1 + '. por favor reportar'
+            default: return 'Error en' + jugada1 + '. por favor reportar'
         }
 
     } else if (jugada1 === opciones.PAPEL) {
@@ -54,7 +54,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.LAGARTO:
                 return resultados.DERROTA
-            default: 'Error en' + jugada1 + '. por favor reportar'
+            default: return 'Error en' + jugada1 + '. por favor reportar'
         }
 
     } else if (jugada1 === opciones.TIJERA) {
@@ -68,7 +68,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.SPOCK:
                 return resultados.DERROTA
-            default: 'Error en' + jugada1 + '. por favor reportar'
+            default: return 'Error en' + jugada1 + '. por favor reportar'
         }
 
     } else if (jugada1 === opciones.LAGARTO) {
@@ -82,7 +82,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.PIEDRA:
                 return resultados.DERROTA
-            default: 'Error en' + jugada1 + '. por favor reportar'
+            default: return 'Error en' + jugada1 + '. por favor reportar'
         }
 
     } else if (jugada1 === opciones.SPOCK) {
@@ -96,7 +96,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.LAGARTO:
                 return resultados.DERROTA
-            default: 'Error en' + jugada1 + '. por favor reportar'
+            default: return 'Error en' + jugada1 + '. por favor reportar'
         }
 
     } else return '¡¿Qué jugada hiciste?! Eso no está en las reglas.'
