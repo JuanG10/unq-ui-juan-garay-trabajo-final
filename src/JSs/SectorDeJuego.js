@@ -40,25 +40,25 @@ const SectorDeJuego = ({props}) => {
     return (
         <div id="sectorDeJuego">
             <div id="imgBasePPTLS">
-                <div id="imgTijera" className="imagenesDeJuego" onClick={() => jugar(opciones.TIJERA)}>
+                <div id="imgTijera" className="divDeImg" onClick={() => jugar(opciones.TIJERA)}>
                     <img src={Tijera} alt={opciones.TIJERA} />
                 </div>
                 <div id="spockPapel">
-                    <div className="imagenesDeJuego" onClick={() => jugar(opciones.SPOCK)}>
+                    <div className="divDeImg"onClick={() => jugar(opciones.SPOCK)}>
                         <img src={Spock} alt={opciones.SPOCK} />
                     </div>
                     <div>
                         <img src={PPTLS} alt="PPTLS" /> {/* Cambiar esto urgente por algo funcional */}
                     </div>
-                    <div className="imagenesDeJuego" onClick={() => jugar(opciones.PAPEL)}>
+                    <div className="divDeImg"onClick={() => jugar(opciones.PAPEL)}>
                         <img src={Papel} alt={opciones.PAPEL} />
                     </div>
                 </div>
                 <div id="lagartoPiedra">
-                    <div className="imagenesDeJuego" onClick={() => jugar(opciones.LAGARTO)}>
+                    <div className="divDeImg"onClick={() => jugar(opciones.LAGARTO)}>
                         <img src={Lagarto} alt={opciones.LAGARTO} />
                     </div>
-                    <div className="imagenesDeJuego" onClick={() => jugar(opciones.PIEDRA)}>
+                    <div className="divDeImg"onClick={() => jugar(opciones.PIEDRA)}>
                         <img src={Piedra} alt={opciones.PIEDRA} />
                     </div>
                 </div>

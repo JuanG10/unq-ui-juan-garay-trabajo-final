@@ -8,7 +8,7 @@
     display: grid;
 }
 
-.imagenesDeJuego :hover {
+.divDeImg :hover {
     cursor: pointer;
 }
 

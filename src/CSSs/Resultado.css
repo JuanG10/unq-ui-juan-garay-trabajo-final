@@ -1,0 +1,30 @@
+/* ================ PANTALLA DE RESULTADO ==========================================================================*/
+
+#pantallaResultado {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedor {
+    flex: content;
+}
+
+.jugada {
+    flex : 1 1 auto;
+    height: 300px;
+    border :goldenrod 3px solid;
+    border-style: dotted;
+}
+
+#mensajeYBotonVolver {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+#mensajeResultado {
+    font-size: xx-large;
+}

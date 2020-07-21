@@ -29,6 +29,8 @@ export function determinarVictoria(jugada1, jugada2) {
 
     if (jugada1 === jugada2) return resultados.EMPATE
 
+    const mensajeDeError = 'Error en ' + jugada1 + ' con ' + jugada2 + '. Por favor reportar'
+
     if (jugada1 === opciones.PIEDRA) {
 
         switch (jugada2) {
@@ -40,7 +42,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.SPOCK:
                 return resultados.DERROTA
-            default: return 'Error en' + jugada1 + '. por favor reportar'
+            default: return mensajeDeError
         }
 
     } else if (jugada1 === opciones.PAPEL) {
@@ -54,7 +56,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.LAGARTO:
                 return resultados.DERROTA
-            default: return 'Error en' + jugada1 + '. por favor reportar'
+            default: return mensajeDeError
         }
 
     } else if (jugada1 === opciones.TIJERA) {
@@ -68,7 +70,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.SPOCK:
                 return resultados.DERROTA
-            default: return 'Error en' + jugada1 + '. por favor reportar'
+            default: return mensajeDeError
         }
 
     } else if (jugada1 === opciones.LAGARTO) {
@@ -82,7 +84,7 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.PIEDRA:
                 return resultados.DERROTA
-            default: return 'Error en' + jugada1 + '. por favor reportar'
+            default: return mensajeDeError
         }
 
     } else if (jugada1 === opciones.SPOCK) {
@@ -96,8 +98,8 @@ export function determinarVictoria(jugada1, jugada2) {
                 return resultados.DERROTA
             case opciones.LAGARTO:
                 return resultados.DERROTA
-            default: return 'Error en' + jugada1 + '. por favor reportar'
+            default: return mensajeDeError
         }
 
-    } else return '¡¿Qué jugada hiciste?! Eso no está en las reglas.'
+    } else return '¡¿Qué jugada hiciste?! Eso no está en las reglas...'
 }
