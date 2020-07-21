@@ -9,7 +9,7 @@ import Tijera from '../Imagenes/Tijera.png'
 import Lagarto from '../Imagenes/Lagarto.png'
 import Spock from '../Imagenes/Spock.png'
 
-import opciones from './Opciones.js'
+import opciones from '../ENUMs/Opciones.js'
 
 function opcionAleatoria() {
     const random = Math.floor(Math.random() * 5); // Devuelve un número del 0 al 4.
@@ -32,9 +32,9 @@ function opcionAleatoria() {
 
 const SectorDeJuego = ({props}) => {
 
-    const jugar = (jugada) => {
-        const jugadaCPU = opcionAleatoria()
-        props.history.push('/resultado', { jugada, jugadaCPU })
+    const jugar = (jugada1) => {
+        const jugada2 = opcionAleatoria()
+        props.history.push('/resultado', { jugada1, jugada2 })
     }
 
     return (

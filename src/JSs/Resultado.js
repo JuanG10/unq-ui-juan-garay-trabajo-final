@@ -1,42 +1,19 @@
 import React from 'react';
 
-import opciones from './Opciones.js'
-
-import Piedra from '../Imagenes/Piedra.png'
-import Papel from '../Imagenes/Papel.png'
-import Tijera from '../Imagenes/Tijera.png'
-import Lagarto from '../Imagenes/Lagarto.png'
-import Spock from '../Imagenes/Spock.png'
-
 import { Button } from 'react-bootstrap';
+
+import { seleccionarImgDeJugada, determinarVictoria } from './JugadasPosibles'
 
 const Resultado = (props) => {
 
-    const jugada = props.location.state.jugada
-    const jugadaCPU = props.location.state.jugadaCPU
-
-    function seleccionarImgDeJugada(opc) {
-
-        switch (opc) {
-            case opciones.PIEDRA:
-                return Piedra
-            case opciones.PAPEL:
-                return Papel
-            case opciones.TIJERA:
-                return Tijera
-            case opciones.LAGARTO:
-                return Lagarto
-            case opciones.SPOCK:
-                return Spock
-            default:
-                return '¿Rompió el juego? Contame sobre el problema en un issue por favor.'
-        }
-    }
+    const jugada1 = props.location.state.jugada1
+    const jugada2 = props.location.state.jugada2
 
     return (
         <div>
-            <img src={seleccionarImgDeJugada(jugada)} />
-            <img src={seleccionarImgDeJugada(jugadaCPU)} />
+            <img src={seleccionarImgDeJugada(jugada1)} alt="Jugada del jugador 1" />
+            <img src={seleccionarImgDeJugada(jugada2)} alt="Jugada del jugador 2" />
+            <p>{determinarVictoria(jugada1, jugada2)}</p>
             <Button onClick={() => props.history.goBack()} > Volver a Jugar </Button>
         </div>
     )

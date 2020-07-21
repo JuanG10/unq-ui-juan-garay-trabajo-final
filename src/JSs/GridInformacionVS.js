@@ -5,7 +5,7 @@ import '../CSSs/GridInformacionVS.css'
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Dropdown from 'react-bootstrap/Dropdown'
 
-import oponentes from './Oponentes'
+import oponentes from '../ENUMs/Oponentes'
 
 const GridInformacionVS = () => {
     // Barra que señala el lado del jugador y el CPU. Pudiendo seleccionar el oponente.
