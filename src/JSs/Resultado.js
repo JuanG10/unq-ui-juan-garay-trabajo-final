@@ -37,16 +37,13 @@ const Resultado = (props) => {
         <div id="pantallaResultado" style={background}>
                 <div className="contenedor">
                     <img className="jugada" style={colorDeBordes} src={seleccionarImgDeJugada(jugada1)} alt="Jugada del jugador 1" />
-                    <h2>VICTORIAS 9000</h2>
                 </div>
                 <div className="contenedor" id="mensajeYBotonVolver">
                     <h3 id="mensajeResultado">{resultadoEnfrentamiento}</h3>
                     <Button onClick={() => props.history.goBack()} > Volver a Jugar </Button>
-                    <p>Soy un comentario random para el futuro.</p>
                 </div>
                 <div className="contenedor">
                     <img className="jugada" style={colorDeBordes} src={seleccionarImgDeJugada(jugada2)} alt="Jugada del jugador 2" />
-                    <h2>VICTORIAS 9000</h2>
                 </div>
         </div>
     )

@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../CSSs/SectorDeJuego.css'
 
-import PPTLS from '../Imagenes/PPTLS.png'
+import PPTLS from '../Imagenes/Flechas2.jpg'
 import Piedra from '../Imagenes/Piedra.png'
 import Papel from '../Imagenes/Papel.png'
 import Tijera from '../Imagenes/Tijera.png'
@@ -47,9 +47,7 @@ const SectorDeJuego = ({props}) => {
                     <div className="divDeImg"onClick={() => jugar(opciones.SPOCK)}>
                         <img src={Spock} alt={opciones.SPOCK} />
                     </div>
-                    <div>
-                        <img src={PPTLS} alt="PPTLS" /> {/* Cambiar esto urgente por algo funcional */}
-                    </div>
+                        <img id="flechas" src={PPTLS} alt="PPTLS" />
                     <div className="divDeImg"onClick={() => jugar(opciones.PAPEL)}>
                         <img src={Papel} alt={opciones.PAPEL} />
                     </div>

@@ -3,6 +3,8 @@
 #gridInfoVS {
     display: flex;
     width: 70%;
+    margin-bottom: -30px;
+    margin-top: -10px;
 }
 
 h2 {

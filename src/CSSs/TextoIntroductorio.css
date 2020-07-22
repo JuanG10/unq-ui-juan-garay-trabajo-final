@@ -6,7 +6,11 @@
     font-family: cursive;
     font-style: oblique;
     margin-top: auto;
-    margin-bottom: -1%;
+    margin-bottom: -3%;
+}
+
+#espacioIntroductorio {
+    margin-bottom: -25px;
 }
 
 #piedra {

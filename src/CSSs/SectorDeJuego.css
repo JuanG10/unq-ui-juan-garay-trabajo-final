@@ -12,19 +12,27 @@
     cursor: pointer;
 }
 
+#flechas {
+    height: 300px;
+    width: 300px;
+}
+
 #imgTijera {
     grid-row: 1;
     text-align: center;
+    margin-bottom: -5px;
 }
 
 #spockPapel {
     grid-row: 2;
     display: flex;
     justify-content: space-between;
+    margin-bottom: -30px;
 }
 
 #lagartoPiedra {
     grid-row: 3;
     display: flex;
     justify-content: space-between;
+    margin-top: -30px;
 }

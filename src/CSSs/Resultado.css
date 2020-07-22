@@ -9,11 +9,12 @@
 
 .contenedor {
     flex: content;
+    margin-left: 50px;
 }
 
 .jugada {
     height: 300px;
-    border :goldenrod 3px solid;
+    border : goldenrod 3px solid;
     border-style: dotted;
 }
 
