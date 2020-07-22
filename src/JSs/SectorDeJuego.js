@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../CSSs/SectorDeJuego.css'
 
-import PPTLS from '../Imagenes/PPTLS.png'
+import PPTLS from '../Imagenes/flechas5.jpg'
 import Piedra from '../Imagenes/Piedra.png'
 import Papel from '../Imagenes/Papel.png'
 import Tijera from '../Imagenes/Tijera.png'
@@ -26,15 +26,18 @@ function opcionAleatoria() {
         case 4:
             return opciones.SPOCK
         default:
-            return 'No tendrías que haber llegado acá. Esto es un error así que reportalo.'
+            return 'Si estás viendo esto reportalo como un error.'
     }
 }
 
-const SectorDeJuego = ({props}) => {
+const SectorDeJuego = ({ props }) => {
+
+    const [contVictoriasJug1,setContJug1] = useState(0)
+    const [contVictoriasJug2,setContJug2] = useState(0)
 
     const jugar = (jugada1) => {
         const jugada2 = opcionAleatoria()
-        props.history.push('/resultado', { jugada1, jugada2 })
+        props.history.push('/resultado', { jugada1, jugada2, contVictoriasJug1, contVictoriasJug2 })
     }
 
     return (
@@ -44,21 +47,21 @@ const SectorDeJuego = ({props}) => {
                     <img src={Tijera} alt={opciones.TIJERA} />
                 </div>
                 <div id="spockPapel">
-                    <div className="divDeImg"onClick={() => jugar(opciones.SPOCK)}>
+                    <div className="divDeImg" onClick={() => jugar(opciones.SPOCK)}>
                         <img src={Spock} alt={opciones.SPOCK} />
                     </div>
                     <div>
                         <img src={PPTLS} alt="PPTLS" /> {/* Cambiar esto urgente por algo funcional */}
                     </div>
-                    <div className="divDeImg"onClick={() => jugar(opciones.PAPEL)}>
+                    <div className="divDeImg" onClick={() => jugar(opciones.PAPEL)}>
                         <img src={Papel} alt={opciones.PAPEL} />
                     </div>
                 </div>
                 <div id="lagartoPiedra">
-                    <div className="divDeImg"onClick={() => jugar(opciones.LAGARTO)}>
+                    <div className="divDeImg" onClick={() => jugar(opciones.LAGARTO)}>
                         <img src={Lagarto} alt={opciones.LAGARTO} />
                     </div>
-                    <div className="divDeImg"onClick={() => jugar(opciones.PIEDRA)}>
+                    <div className="divDeImg" onClick={() => jugar(opciones.PIEDRA)}>
                         <img src={Piedra} alt={opciones.PIEDRA} />
                     </div>
                 </div>

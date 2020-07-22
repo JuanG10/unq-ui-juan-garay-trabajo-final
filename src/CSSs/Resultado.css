@@ -8,7 +8,15 @@
 }
 
 .contenedor {
-    flex: content;
+    width: 100%;
+    margin-left: 50px;
+}
+
+#metaContenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
 }
 
 .jugada {

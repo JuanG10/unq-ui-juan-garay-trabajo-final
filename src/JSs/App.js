@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/resultado" component={Resultado} />
+        <Route exact={true} path="/resultado" component={Resultado} />
         <Route path="/" component={Main} />
         <Route path="*" render={() => <div id="NotFound">Not Found 404</div>} />
       </Switch>

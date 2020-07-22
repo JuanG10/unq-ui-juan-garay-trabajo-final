@@ -10,7 +10,7 @@ const Main = (props) => {
     return (
         <div id="mainBody">
             <TextoIntroductorio />
-            <GridInformacionVS />
+            <GridInformacionVS props={props}/>
             <SectorDeJuego props={props}/>
             <div>
                 <Button>Posteriormente: Consejos o simil</Button>
